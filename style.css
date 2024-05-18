@@ -1,0 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav li:hover {
+  cursor: pointer;
+  color: #00e1ff;
+}

@@ -1,5 +1,5 @@
 const loadAllPlayer = (searchText) => {
-  const url = `https:\\www.thesportsdb.com/api/v1/json/3/searchplayers.php?p=${searchText}`;
+  const url = `https://www.thesportsdb.com/api/v1/json/3/searchplayers.php?p=${searchText}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
@@ -74,7 +74,7 @@ const handleSearch = () => {
 };
 
 const handle_add_to_cart = (id) => {
-  const url = `https:\\www.thesportsdb.com/api/v1/json/3/lookupplayer.php?id=${id}`;
+  const url = `https://www.thesportsdb.com/api/v1/json/3/lookupplayer.php?id=${id}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
@@ -113,7 +113,7 @@ const handle_add_to_cart = (id) => {
 };
 
 const loadPlayerDetails = (id) => {
-  const url = `https:\\www.thesportsdb.com/api/v1/json/3/lookupplayer.php?id=${id}`;
+  const url = `https://www.thesportsdb.com/api/v1/json/3/lookupplayer.php?id=${id}`;
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
